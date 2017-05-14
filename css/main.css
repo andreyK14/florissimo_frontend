@@ -1,0 +1,1480 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px; /*минимальная ширина(то есть телефоы меньшего размера будут исключены)*/
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised;
+}
+
+.hidden {
+  display: none; 
+}
+
+/*добавление прлоадера.*/
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute; 
+}
+
+
+.main_head {
+  /*color in less*/
+}
+
+
+
+.top_header {
+  padding-top: 15px;/*может быть не нужно т.к. есть бустрап*/
+  /*height: 150px;*/
+
+  position: relative;/*относительное позиц. т.к. будет свехру отображатся меню при маленьком разрешении*/
+}
+
+
+/*обертка для */
+.site_main_descr_wrap {
+  position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+.logo_title_descr_container {
+  /*варавнивание текста по левому краю*/
+  text-align: left;
+
+}
+
+.logo_title_descr_container_wrap {
+  /*ширина = содержимому(нужно для выравнивания по центру)*/
+  display: inline-block;
+  /*width: 265px;
+  margin: auto;*/
+
+}
+
+
+
+/*элемент с логотипом*/
+.site_logo {
+  float: left;
+  width: 49px;
+  height: 49px;
+  margin-top: 10px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 49px;
+  background-size: 49px;
+}
+
+/*обертка названия и описания*/
+.site_descr_wrap {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.site_descr_wrap {
+  float: left;
+}
+
+/*название сайта*/
+.main_head .site_title {
+  /*убраны отступ т.к. было большой растояние до описания*/
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+  font-family: "NautilusPompiliusRegular";
+  /*цвет в less*/
+}
+
+/*описание сайта*/
+.main_head .site_description {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 9.5px;
+}
+
+
+/*контейнер для элементов*/
+.save_money_number_basket_wrap {
+  margin-top: 20px;
+
+
+}
+
+
+
+.number {
+  float: left;
+
+}
+
+
+
+
+/*блоки save_money, number, basket имеют одинаковый отступ*/
+.save_money,
+.number,
+.basket {
+  /*margin-left: 0px;
+  margin-right: 10px;
+  padding-left: 2px;
+  padding-right: 2px;*/
+}
+
+/*блоки save_money, number имеют одинаковый стиль*/
+.save_money,
+.number {
+  text-transform: uppercase; /*верхний регистр*/
+  font-weight: bold;
+  /*display: inline-block;*/
+  /*float: left;*/
+}
+
+.save_money {
+  /*margin-left: 30px;
+  margin-right: 30px;*/
+
+}
+
+.save_money_title,
+.number_title {
+  font-size: 16px;
+}
+
+.save_money_descr,
+.number_descr {
+  font-size: 11px;
+}
+
+
+/*float left т.к. блоки должны быть радом */
+.save_money_container_text,
+.save_money_icon,
+.number_container_text,
+.number_icon {
+  float: left;
+}
+
+/*контейнер*/
+.save_money_container_text,
+.number_container_text {
+  margin-top: 4px;
+  margin-left: 7px;
+}
+
+/*стиль для контейнеров иконок*/
+.save_money_icon,
+.number_icon {
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+
+}
+
+
+/*контейнер с иконкой. т.к. она не пропорционально большая*/
+.save_money_icon {
+  margin-bottom: 8px; /*добавлен отступ т.к. из-за изменения размера, изменяется положение всего текста контейнера.*/
+  font-size: 28px;
+  margin-right: 0;
+  /*поворот контейнера с иконкой*/
+  -moz-transform: rotate(-90deg); /* Для Firefox */
+  -ms-transform: rotate(-90deg); /* Для IE */
+  -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg); /* Для Opera */
+  transform: rotate(-90deg);
+}
+
+/*изменение значений у контейнера с текстом т.к. изменен размер иконки, он был слишком велик.*/
+.save_money_container_text {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+/*стиль для процента*/
+.save_money_percentage {
+  font-size: 12px;
+
+}
+
+
+/*стиль для блока с корзиной и логином.*/
+/*для всех элементов в блоке корзины*/
+.basket {
+  float: right;
+  /*display: inline-block;*/
+  color: #fff;
+}
+
+/*
+.basket_inner {
+  float: right;
+
+}*/
+
+
+/*для контейнера иконки*/
+.basket .basket_icon_container {
+  float: left;
+  color: #fff;
+  font-size: 32px;
+  margin-top: 3px;
+}
+
+/*для контейнера иконки*/
+.basket .basket_icon_container a {
+  color: #fff;
+}
+
+
+/*содержимое */
+.basket_text_container {
+  float: left;
+  margin-top: 4px;
+  letter-spacing: 0.2px;
+  margin-left: 7px;
+
+}
+
+
+.basket .basket_sum,
+.basket .currency {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+
+}
+
+
+
+/*для текстовых блоков*/
+.basket .basket_goods {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.basket .basket_goods a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+/*блок навигацией и поиском*/
+.bottom_head {
+  margin-top: 51px;
+}
+
+
+
+.all_menu {
+  margin: 0 8px;
+
+}
+
+
+
+.top_mnu ul {
+  list-style-type: none;
+
+}
+
+
+/*меню*/
+.top_mnu ul {
+  margin-top: 17px;
+  /*margin: auto;*/
+  /*width: 800px;*/
+  float: left;
+  padding-left: 0;
+}
+
+.top_mnu ul li:first-child {
+  /*margin-left: 0px;
+  padding-left: 0px;*/
+
+}
+
+.top_mnu ul li {
+  display: inline-block;
+  padding: 7px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  /*border-radius: 13px;*/
+  margin-right: 10px;
+  margin-left:0;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+.top_mnu {
+  background: #fff;
+  /*height: 32px;*/
+  border-radius: 30px;
+  padding: 0 13px;
+
+  /*letter-spacing: 1px;*/
+
+
+}
+
+
+/*убираем подчеркивание при наведении на ссылку*/
+.top_mnu ul li a:hover,
+.bottom_menu ul li a:hover {
+  text-decoration: none;
+
+}
+
+.top_mnu ul li a,
+.bottom_menu ul li a {
+  -moz-user-select: none;
+}
+
+
+
+/*стиль для отмеченного элемента*/
+.top_mnu .active {
+  
+
+}
+
+
+
+.search_container {
+  float: right;
+  margin-top: 14px;
+}
+
+.search_container .search_input {
+  float: left;
+  padding: 9px 50px 9px 15px;
+  width: 180px;
+  /*z-index: 9999;*/
+  border-radius: 18px 0 0 18px;
+}
+
+
+
+.search_container .search_input:focus {
+  /*bootstrap*/
+  box-shadow: 0 0 8px rgba(178,128,228,0.8);
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+
+}
+
+
+ 
+
+
+/*стиль для элемента button в форме поиска*/
+.search_container .search_submit {
+    float: left;
+    background: url("../img/search-icon-web.png") no-repeat 5px 9px / 21px #FFC003;
+    height: 40px;
+    width: 38px;
+    /*padding: 15px 18px 18px 18px;*/
+    border-radius: 0px 18px 18px 0px;
+    border: none;
+    border-left: 1px solid #828282; /*граница с правой стороны*/
+}
+
+
+/*нижнее меню*/
+.bottom_menu_container {
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+  
+
+}
+
+
+.bottom_menu ul {
+  list-style: none;
+  font-size: 12px;
+  padding-left: 0;
+  margin: 7px 15px;
+
+}
+
+.bottom_menu ul li {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-right: 4px;
+  text-align: center;
+  margin: 2px 0px 0px;
+  
+
+
+
+}
+.bottom_menu ul li a {
+  color: #fff;
+
+  /*margin-right: 10px;*/
+  font-size: 12px;
+  font-family: 'Lobster';
+}
+
+
+
+
+/***блок content***/
+
+.content_wrap {
+  background-image: url("../img/bg_img.jpg");
+  /*margin-top: 10px;*/
+  margin-top: 0px;
+  box-shadow: 0px 2px 10px 1px rgba(178,128,228, 0.8);
+
+}
+
+/*фон у основного контента и сайдбара*/
+.content_wrap .main_content, 
+.content_wrap .sidebar {
+  background: #fff;
+}
+
+
+
+
+
+/*скругление верхних углов у блока content и у блока sidebar*/
+.content_wrap .main_content {
+  border-top-left-radius: 8px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content_wrap .sidebar {
+  border-top-right-radius: 8px;
+}
+
+
+
+
+
+.content_wrap .content_title {
+  /*отступы с верху и снизу, т.к. заголовок слишком близко к товарам*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 38px;
+  font-family: 'Lobster';
+  font-weight: 300;
+
+}
+
+
+
+
+.goods {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
+
+.good {
+  /*position: relative; /*относительное позиционирование, т.к. будет выравние внутреннего контейнера по базовой линии*/
+  display: inline-block;
+
+  width: 24.5%;
+  margin: 8px 0px;
+
+  /*border: 1px solid black;*/
+  padding: 0 0 4px 0;
+  /*vertical-align: bottom;/*выравнивание по нижнему краю*/
+  text-align: center;
+}
+
+
+.good:hover {
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  box-shadow: 0 0 10px rgba(127,127,127,0.5); /* Параметры тени */
+
+}
+
+
+/*обертка содержимого товара*/
+.good_inner {
+  padding: 1px; /*отступ чтоб текст не прилипал к границы*/
+
+}
+
+
+
+
+/*название у товара*/
+.good .good_title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  color: #000;
+  /*vertical-align: middle; /*выравнивание текста вертикально*/
+  /*height: 55px;*/
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  word-wrap: break-word; /* Перенос длинных слов */
+
+}
+
+
+.good .good_img {
+  /*height: 160px;*/
+
+}
+
+
+.good_img img {
+  width: 160px;
+  /*height: 192px;*/
+
+}
+
+/*блок цена.*/
+.good .price_old,
+.good .price_now {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.good .price_old {
+  text-decoration: line-through;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/*перечеркнутый*/
+.good .price_old span {
+  color: #626265;
+  font-weight: 400;
+}
+
+
+/*добавление знака валюты*/
+.good span.cost:after {
+  content: "р.";
+
+}
+
+/*
+.good .price_old{
+  text-align: right;
+}
+
+
+.good .price_now {
+  text-align: left;
+}*/
+
+
+
+
+
+
+
+
+/*кнопка заказов*/
+.order_button {
+  text-align: center;
+  margin: auto;
+  margin-left: 10px;
+  background: none repeat scroll 0% 0% #5CB85C;
+  text-align: center;
+  border: 1px solid #4CAE4C;
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 12px;
+  -moz-user-select: none;
+  color: #FFF;
+  letter-spacing: 1px;
+
+}
+
+
+.order_button:hover {
+  
+  background: none repeat scroll 0% 0% #67C367;
+
+}
+
+
+
+#form_popup {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+
+}
+
+
+
+.modal-box-content {
+  position: relative; 
+}
+
+
+/*контейнер с формой*/
+.form_container {
+  padding: 10px 10px;
+  padding-top: 30px;
+}
+
+
+/*параграфы в контейнере формы*/
+.form_container p,
+.form_container input[type=submit] {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+form_container
+.form_container input[type=submit] {
+  background: none repeat scroll 0% 0% #5CB85C;
+  text-align: center;
+  border: 1px solid #4CAE4C;
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 12px;
+  -moz-user-select: none;
+  color: #FFF;
+}
+
+
+
+
+
+.form_container input,
+.form_container textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #CCC;
+  margin-top: 5px;
+  line-height: 40px;
+  text-indent: 12px;
+  font-size: 12px;
+  background-color: transparent;
+
+}
+
+
+
+
+
+.form_container button {
+
+  border: medium none;
+  color: #FFF;
+  line-height: 40px;
+  padding: 0px 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+  background-color: #8238A7;
+  letter-spacing: 2px;
+
+}
+
+.button_wrap {
+  text-align: right;
+}
+
+
+.form_container label {
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+
+.form-group {
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+/*стиль инпута и textarea при наведении*/
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1px solid #8238A7;
+
+}
+
+
+/*изменение цвета*/
+.color_elem {
+  color: #8238A7;
+
+}
+
+/*
+.main_content .description_category {
+  border-top: 1px dotted #3C3C3C;
+}
+
+*/
+
+
+
+/*****блок с отзывами*****/
+
+
+.reviews_block {
+  border-top: 1px solid #BDBDBD;; /*рамка с верху*/
+}
+
+
+
+
+/*блок содержащий контент*/
+.reviews_inner {
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+/*название блока(секции)*/
+.reviews_block .content_title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+}
+
+
+/*отзыв*/
+.review {
+  border-bottom: 2px dotted #C7C7C7;
+  margin: 15px 0;
+  padding-bottom: 12px;
+}
+
+
+
+
+/*выравнивание по левому краю*/
+.reviews .review_img_container {
+  /* float: left;*/
+  /*width: 17%; /*ширина контейнера 17% от всего контейнера review*/
+}
+
+
+.reviews .review_img_container img {
+  width:100%; /*ширна изображения 100%*/
+  height: auto;/*высота определяется автоматически*/
+  max-height: 150px;/*высота не более 150px*/
+  border-radius: 80px; /*скругление углов изображения*/
+
+}
+
+
+.review .review_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/*автор дата*/
+.review .review_meta .review_meta_author,
+.review .review_meta .review_meta_date {
+  
+  font-family: 'Lobster';
+
+}
+
+.review .review_meta .review_meta_author {
+  float: left;
+  color: #9A32CD;
+  font-size: 15px;
+
+}
+
+.review .review_meta .review_meta_date {
+  float: right;
+  font-size: 13px;
+  color: #808084;
+
+
+}
+
+
+.review:last-of-type {
+  background: red;
+
+}
+
+
+
+.reviews_footer {
+  text-align: center;
+  margin-top: 25px;
+
+}
+
+
+.reviews_all {
+  text-decoration: underline;
+
+}
+
+.reviews_write {
+  margin-left: 10px;
+  background: none repeat scroll 0% 0% #9A32CD;
+  text-align: center;
+  border: 1px solid #9A32CD;
+  white-space: nowrap;
+  padding: 7px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  -moz-user-select: none;
+  color: #FFF;
+
+}
+
+/*при ажатии на ссылку ничего не изменяется*/
+.reviews_write:visited,
+.reviews_write:active {
+  background: none repeat scroll 0% 0% #9A32CD;
+  color: #fff;
+}
+
+
+
+
+
+
+
+/*****Наши преимущества*****/
+
+
+
+
+
+.why_we_block,
+.payment_block,
+.delivery_block {
+  border-top: 1px solid #BDBDBD;
+  margin-top: 80px;
+
+}
+
+
+.why_we_block .content_title {
+  margin-top: 30px;
+
+}
+
+.advantages {
+  margin-top: 45px;
+
+}
+
+.advantage {
+  margin-right: 5px; 
+
+}
+
+
+.advantage .img_container {
+  font-size: 38px;
+  /*color: #7900B8;*/
+
+}
+
+.why_we_block .advantage_text {
+  margin-top: 0;
+
+}
+
+
+/*
+.img_container {
+  
+  background-color: #FDD200;
+  width: 40px;
+  height: 40px;
+  padding: 25px;
+  display: block;
+  border-radius: 500px;
+  /*margin: auto;*
+  text-align: center;
+
+}
+*/
+
+
+/*стиль для блоков описывающих преимущества*/
+.why_we_block .advantage {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/*контейнер изображения*/
+.advantage .img_container .img_icon {
+  margin: auto;
+
+}
+
+
+
+
+
+/*иконка*/
+/*добавление всем иконкам с изображением одинакового стиля, будет изменятся только position*/
+.advantage .img_container .img_icon {
+  width: 60px;
+  height: 50px;
+  background: url("../img/icons.png") no-repeat ;
+}
+
+
+/*стиль для иконки #1*/
+.advantage_1 .img_container .img_icon {
+  background-position: 0px 7px;
+}
+
+
+/*стиль для иконки #2*/
+.advantage_2 .img_container .img_icon {
+  background-position: 0px -50px;
+}
+
+
+
+/*стиль для иконки #2*/
+.advantage_3 .img_container .img_icon {
+  background-position: 0px -100px;
+}
+
+
+
+/*стиль для иконки #2*/
+.advantage_4 .img_container .img_icon {
+  background-position: 0px -150px;
+}
+
+
+
+
+
+
+/*стиль для иконки #2*/
+.advantage_5 .img_container .img_icon {
+  background-position: 0px -100px;
+}
+
+
+/*стиль для иконки #2*/
+.advantage_6 .img_container .img_icon {
+  background-position: 0px -100px;
+}
+
+
+
+/*стиль для */
+.advantage_5 .advantage_text,
+.advantage_6 .advantage_text {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+
+
+
+.advantage_text {
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 13px;
+
+}
+
+
+/*****sidebar*****/
+
+.content_wrap .sidebar {
+  padding: 0;
+  background: rgba(255,255,255,1);
+  border-left: 1px solid #BDBDBD;
+
+}
+
+.sidebar .sec_title,
+.sidebar .sec_content {
+padding-left: 10px;
+
+}
+
+.sec_title {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  letter-spacing: 1px;
+
+}
+
+
+/*стиль для секции фильтра*/
+.sidebar_block {
+  margin-top: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdbdbd;
+
+}
+
+/*убираем border у последнего элемента из блоков сайдабара*/
+.sidebar_block:last-of-type {
+  border: none;
+
+}
+
+
+/*фильтры параметров(стоимость, размер, цвет, сортировка)*/
+.sidebar .sec_filter select {
+  display: block;
+  font-size: 13px;
+  padding: 2px 5px;
+  margin-bottom: 7px;
+  border-radius: 7px;
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+
+/*стиль для фильтров категорий*/
+
+.filter_category {
+  padding: 7px 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #337AB7;;
+}
+
+
+
+
+/*секция персональный заказ*/
+
+.sec_personal_order .sec_content {
+
+  padding-right: 8px;
+
+}
+
+
+
+/*название спец заказа*/
+.special_order .special_order_title {
+  font-size: 11px;
+  word-wrap: break-word;
+
+}
+
+/*стиль для списка*/
+.special_order_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*стиль для пунктов списка*/
+.special_order_list .special_offer {
+  display: inline-block;
+  width: 30%;
+}
+
+
+/*блок с контентом*/
+.special_order {
+  text-align: center;
+
+}
+
+
+
+
+
+/*****payment_block*****/
+.payment_block {
+  
+
+}
+
+
+.payment_block {
+  border-top: 1px solid #BDBDBD;
+  margin-top: 0;
+}
+
+
+/*****footer*****/
+
+#footer {
+  /*background: rgba(255,255,255,.5);
+  background: rgba(0,0,0, 1);*/
+  
+}
+
+
+.foot_block {
+  float: left;
+
+  color: #7F7F7F;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+
+.foot_block .menu_title {
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D0D0D0;
+  margin-bottom: 12px;
+
+}
+
+
+.foot_block .menu_links {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+
+.foot_block .menu_links li {
+  margin-bottom: 3px;
+
+}
+
+
+.foot_block .menu_links a {
+  color: #7F7F7F;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/************single_product************/
+
+
+/*для одиночного товара нет сайдбара, добавляем скругление углов с правой стороны*/
+.post_single_good .content_wrap .main_content {
+  border-top-right-radius: 8px;
+}
+
+
+.post_single_good {
+}
+
+
+/*стиль для контейнера товара*/
+.post_single_good .single_good {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.post_single_good .main_about_single_good {
+  /*width: 490px;*/
+}
+
+
+.main_about_single_good {
+  text-align: center;
+  /*display: inline-block;*/
+  margin-bottom: 40px;
+ 
+
+}
+
+
+
+
+
+.about_single_good { 
+  width: 420px;
+}
+
+
+.about_single_good_container {
+  position: relative;
+  display: inline-block;
+  min-width: 490px;
+
+}
+
+
+.single_good_photo_small_container {
+  width: 100px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  margin-left: 50px;
+
+}
+
+
+/*заголовок одиночного товара*/
+.single_good_title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 27px;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+/*стиль для изображения*/
+.single_good .single_good_photo img {
+  width: 352px;
+  /*height: 384px;*/
+  height: auto;
+
+}
+
+
+.single_good_photo_small_descr {
+  display: inline-block;
+  width: 55px;
+  vertical-align: bottom;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer; /*курсор т.к. можно кликнуть*/
+
+}
+
+
+/*стиль для уменьшенного изображения*/
+.single_good_photo_small img {
+  width: 35px;
+  cursor: pointer;
+}
+
+
+
+
+
+.single_good_descr {
+
+}
+
+.single_good_descr_title {
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: left;
+
+}
+
+
+.single_good_descr {
+  text-align: left;
+
+}
+
+
+
+.right_block {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #F7F6F7;
+
+}
+
+.right_block_title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+
+}
+
+
+
+/*выстовляем высоту автоматически*/
+.post_single_good .content_wrap .content {
+  height: auto;
+
+}
+
+
+.post_single_good .content_wrap .sidebar {
+  height: auto !important;
+  border-top-right-radius: 0;
+  border-top: 1px solid #BDBDBD;
+
+}
+
+/*удаляем фильтры из сайдбара(для одиночного товара)*/
+.post_single_good .content_wrap .sidebar .sec_filter {
+  display: none;
+
+}
+
+
+.delivery .main_content {
+  height: auto !important;
+
+}
+
+
+.delivery .main_content {
+  border-top-left-radius: 0;
+
+}
+
+
+.delivery .sidebar {
+  display: none;
+  border-top-right-radius: 0;
+  border-top: 1px solid #BDBDBD;
+
+}
+
+.delivery .main_content .table {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+
+.delivery .main_content .table .table_time {
+  text-align: center;
+
+}
+
+
+.delivery .main_content .table .region {
+  border-right: 1px solid #DDD;
+  text-align: center;
+
+}
+
+
+
+
+
+/******страница contacts********/
+
+.contacts .contacts_title {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 12px;
+
+
+}
+
+.contacts .contacts_content_text ul {
+  list-style-type: none;
+  padding-left: 0;
+
+}
+.contacts .contacts_content_text ul li {
+  border-bottom: 1px solid #BDBDBD;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  font-style: italic;
+  letter-spacing: 0.2px;
+
+}
+.contacts .contacts_content_text ul li:last-of-type {
+  border-bottom: none;
+
+
+}
+
+
+
+
+.contacts .main_content {
+  height: auto !important;
+
+}
+
+/*выстовляем высоту автоматически*/
+.contacts .sidebar {
+  height: auto !important;
+}
+
+/*выстовляем высоту автоматически*/
+.contacts .sidebar .sec_filter {
+  display: none;
+}

@@ -1,0 +1,181 @@
+/*цвета в шапке*/
+@main_bg_color: #7900B8;
+
+
+@addition_bg_color: #9400D3;
+/*основной белый цвет. Используется для названия, save_money, number*/
+@main_white_color: #F0F0F0;
+/*дополнительный(описание сайта, описание блоков save_money, number)*/
+@addition_white_color: #cacaca;
+
+/*цвет кнопок меню*/
+@background_menu_color: #540793;
+
+
+/*цвет иконок*/
+@icon_color: #E6E6E6;
+
+
+/*цвет выбранного элемент в основном меню*/
+@main_active_color: #D43E91;
+
+
+/*цвет для подменю и меню и ссылок в футере*/
+@bottom_mnu_color: #8250B4;
+
+
+/*основной сиреневый цвет.*/
+@main_lilac: #8250B4;
+
+
+/*основной цвет футера*/
+@footer_bgc: #392240;
+
+
+
+
+
+.main_head {
+  /*background-color: @main_bg_color;*/
+  /*градиент с плавным перезодом, начало немного темнее, конец - немного светлее*/
+  background: -webkit-gradient(linear, left top, left bottom, from(@main_bg_color + #151515), to(@main_bg_color - #151515));
+  background: -moz-linear-gradient(top,  @main_bg_color + #151515,  @main_bg_color - #151515);
+}
+
+
+
+
+.site_description {
+  color: @addition_white_color;
+
+}
+
+
+.bottom_head {
+  /*background-color: @addition_bg_color;*/
+}
+
+/*название сайта*/
+.main_head .site_title {
+  color: @main_white_color;
+
+}
+
+
+/*save_money, номер*/
+.save_money_title,
+.number_title {
+  color: @main_white_color;
+}
+
+.save_money_descr,
+.number_descr {
+  color: @addition_white_color;
+}
+
+
+.top_mnu ul li a {
+  /*color: @main_white_color;*/
+  color: @main_white_color;
+}
+
+
+.top_mnu ul li {
+  /*border: 1px solid @main_white_color;*/
+  border: 1px solid @main_bg_color;
+  border-radius: 10px;
+  
+
+  background: -webkit-gradient(linear, left top, left bottom, from(@background_menu_color + #252525), to(@background_menu_color - #151515));
+  background: -moz-linear-gradient(top,  @background_menu_color + #252525,  @background_menu_color - #151515);
+
+}
+
+
+.active_elem(@border_size:1px) {
+  background: -webkit-gradient(linear, left top, left bottom, from( @main_active_color + #151515, to(@main_active_color - #151515));
+  background: -moz-linear-gradient(top, @main_active_color + #151515, @main_active_color - #151515);
+  border: @border_size solid @main_active_color + #313535;
+
+}
+
+
+/*стиль для отмеченного элемента*/
+.top_mnu .active {
+  .active_elem;
+  
+}
+
+
+.top_mnu li:hover {
+  .active_elem;
+}
+
+
+
+
+
+.save_money_icon,
+.number_icon {
+  color: @icon_color;
+
+}
+
+
+/*элемент инпут для поиска*/
+.top_mnu .search_input {
+  border: 1px solid @main_bg_color;
+  border-right: none;
+}
+
+
+
+
+/*цвет элемента в дополнительном меню.*/
+.bottom_menu ul li {
+  background: @bottom_mnu_color;
+
+}
+
+.bottom_menu li:hover {
+  .active_elem(0px);
+
+}
+
+
+/**блок контент**/
+
+.content_wrap .content_title {
+  color: @main_bg_color;
+
+}
+
+
+
+
+.reviews_write:hover {
+  .active_elem;
+  color: @main_white_color;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+#footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(@footer_bgc), to(@footer_bgc - #252525));
+  background: -moz-linear-gradient(top,  @footer_bgc,  @footer_bgc - #252525);
+
+}
+
+/*
+#footer .menu_links li a {
+  color: @bottom_mnu_color;
+}
+*/
+

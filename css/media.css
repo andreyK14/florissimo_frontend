@@ -1,0 +1,345 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+	/*скрываем блок о сохранение денег*/
+	.save_money {
+		display: none;
+
+	}
+	
+	/*стиль для элементов li у списка*/
+	.all_menu .top_mnu li {
+		padding: 6px 18px;
+		font-size: 10px;
+		margin-right: 6px;
+
+	}
+	/*контейнер элемента инпут*/
+	.all_menu .search_container {
+		font-size: 11px;
+
+
+	}
+	/*стиль для инпута*/
+	.all_menu .search_container .search_input {
+		width: 130px;
+	}
+
+
+	/*стиль для кнопки поиска*/
+	.all_menu .search_submit {
+		height: 36px;
+		-webkit-background-size: 18px;
+		background-size: 18px;
+		background-position: 7px 8px;
+
+	}
+
+	.bottom_menu_container .bottom_menu li {
+		margin-right: 7px;
+		font-size: 12px;
+		padding: 5px 11px;
+	}
+
+	/*размер описания уменьшаем. т.к. не ровно отображается иконка*/
+	.number .number_descr {
+		font-size: 9px;
+	}
+
+	.logo_title_descr_container {
+		/*выравнивание текста сразу по центру, т.к. на маленьких экранах блок будет на всю ширину*/
+		text-align: center;
+	
+
+	}
+	.top_mnu ul {
+		margin-top: 10px;
+	}
+	.all_menu .search_container {
+		margin-top: 6px;
+	}
+
+
+	/*без скругления углов у блока content и у блока sidebar, т.к. sidebar перемещается */
+	.content_wrap .main_content {
+	  border-top-left-radius: 0;
+	}
+	.content_wrap .sidebar {
+	  border-top-right-radius: 0;
+	}
+
+	/*размер body сайдбара устанавливается автоматически(нужно т.к. в js установлено что он должен быть одинакового размера с body)*/
+	.content_wrap .main_content {
+		height: auto !important;
+		border-bottom: 1px solid #BDBDBD !important;
+	}
+
+	/*размер сайдбара определяется автоматически*/
+	.content_wrap .container .sidebar {
+		height: auto !important;
+
+	}
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.logo_title_descr_container_wrap {
+		width: 200px;
+
+	}
+	/*номер и корзина как блочный элемент*/
+	.number,
+	.basket {
+		/*display: block;*/
+	}
+	
+
+
+	/*уменьшение названия сайта*/
+	.top_header .logo_title_descr_container .site_title {
+		font-size: 35px;
+	}
+	/*уменьшение описания*/
+	.top_header .logo_title_descr_container .site_description {
+		font-size: 8px;
+	}
+	/*для лого, делаем его меньше*/
+	.top_header .logo_title_descr_container .site_logo {
+		background-size: 29px auto;
+		width: 32px;
+		height: 32px;
+	}
+
+	.top_header .logo_title_descr_container .site_descr_wrap {
+		padding-left: 1px;
+	}
+
+
+	.save_money_number_basket_wrap {
+		margin-top: 10px;
+	}
+ 
+
+	/*контейнер с текстом*/
+	.number .number_container_text {
+		/*margin-left: 5px;*/
+
+	}
+	/*размер иконки*/
+	.number .number_icon {
+		font-size: 25px;
+
+	}
+
+	/*размер заголовка у блока с телефоном*/
+	.number_container_text .number_title{
+		font-size: 12px;
+
+	}
+
+	
+	.basket	.basket_icon_container {
+		font-size: 19px;
+
+	}
+	.basket .basket_text_container {
+		margin-left: 5px;
+
+
+	}
+	.basket .basket_text_container .basket_goods {
+		font-size: 10px;
+
+	}
+
+
+	.basket .basket_text_container .basket_sum,
+	.basket .basket_text_container .currency {
+		font-size: 10px;
+	}
+
+
+	.all_menu .bottom_head .top_mnu li {
+		font-size: 10px;
+		margin-right: 2px;
+		display: block;
+		margin-bottom: 3px;
+	}
+
+	/*.save_money_number_basket_wrap .number,
+	.save_money_number_basket_wrap .basket {
+		float: none;
+
+	}*/
+	/*
+	.top_mnu ul {
+		position: absolute;
+	    top: 1px;
+	    right: 2px;
+
+	}*/
+	
+	.basket {
+		margin-left:2px;
+
+	}
+
+	/*************************
+	для меню, наверное бред.
+
+
+
+	}
+	************************/
+	.bottom_menu_container .bottom_menu li {
+		margin-right: 0px;
+	}
+
+
+	.content_wrap .content_title {
+		font-size: 34px;
+
+	}
+
+
+
+	/*товары по 3шт.*/
+	.good {
+		width: 32%;
+
+	}
+
+	.good .good_title {
+		font-size: 17px;
+
+	}
+
+	.good .price_now {
+		font-size: 16px;
+
+	}
+	.good_img img {
+	  width: 128px; /*на 20 % меньше*/
+	  /*height: 162px;*/
+	  
+	}
+
+
+}
+
+
+/*мое разришение для 2-х товаров*/
+@media only screen and (max-width : 550px) {
+	.good {
+		width: 49%;
+	}
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.good {
+		width: 99%;
+
+	}
+
+	.delivery .main_content .table {
+	  font-size: 11px;
+
+	}
+
+}
+
+/* may size. добавленно потому-что проблема с выравниванием блоков baskey*/
+@media only screen and (max-width : 360px) {
+
+	.number {
+		/*отступ в правую сторону 10px, т.к. у .basket добавляется float right*/
+		margin-right: 10px;
+
+	}
+
+	/*корзина*/
+	.basket {
+		/*выравнивание по левому краю. */
+		float: left;
+
+	}
+	
+	/*добавляем отступ с низу, т.к. не красиво смотрится input*/
+	.top_mnu {
+		padding: 0px 13px 5px 14px;
+
+	}
+	
+	/*меню растягиваем на всю ширину*/
+	.top_mnu ul {
+		float: none;
+		padding-top: 9px;
+
+	}
+	.search_container {
+		float: none;
+
+	}
+
+	.all_menu .top_mnu .search_container .search_input {
+		width: 200px;
+
+	}
+
+	/*стиль для таблицы с заказом*/
+	.delivery .main_content .table {
+	  font-size: 9px;
+
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/*ширина немного уменьшится*/
+	.top_header .all_menu .search_container .search_input {
+   		width: auto;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
